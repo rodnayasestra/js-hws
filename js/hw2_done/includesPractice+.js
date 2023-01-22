@@ -15,7 +15,7 @@
 // В функции includes используется for, return, но не метод массива includes
 
 // TASK DECISION
-function includes(array, value) {
+const includes = (array, value) => {
   // Change code below this line
   let includes = false;
   for (let i = 0; i < array.length; i += 1) {
@@ -26,6 +26,6 @@ function includes(array, value) {
   }
   return includes;
   // Change code above this line
-}
+};
 
 console.log(includes([1, 2, 3, 8, 5], 3));

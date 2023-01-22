@@ -41,3 +41,4 @@ const e = 8 % 3;
 console.log(d);
 // console.log(a);
 // console.log(4 % 3);
+const f = 8 % 9;

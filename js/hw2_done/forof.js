@@ -61,7 +61,7 @@
 
 function calculateTotalPrice(order) {
   let total = 0;
-  for (const value of order) {
+  for (let value of order) {
     total += value;
   }
   return total;

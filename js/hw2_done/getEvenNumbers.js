@@ -11,7 +11,7 @@
 // Вызов функции getEvenNumbers() со случайными start и end возвращает правильный массив
 
 // TASK DECISION
-function getEvenNumbers(start, end) {
+const getEvenNumbers = (start, end) => {
   // Change code below this line
   const evenNumbers = [];
   for (let i = start; i <= end; i += 1) {
@@ -22,5 +22,6 @@ function getEvenNumbers(start, end) {
   return evenNumbers;
 
   // Change code above this line
-}
+};
+
 console.log(getEvenNumbers(2, 5));
