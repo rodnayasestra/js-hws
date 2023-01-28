@@ -1,4 +1,3 @@
-
 const users = [
     {
       name: "Moore Hensley",
@@ -64,25 +63,16 @@ const users = [
       gender: "female"
     }
   ];
-  
-//   // const getNamesSortedByFriendCount = users => { return [...users]
-//   //   .sort((a, b) => a.friends.length - b.friends.length )
-//   //   .map(friend => friend.name)};
-  
-  
-//     // const getNamesSortedByFriendCount = users => 
-//     // [...users]
-//     //   .sort(({friends: {length: a}}, {friends: {length: b}}) => a - b)
-//     //   .map(({name}) => name);
-  
-//     const sortUsersByFriendCount = (a, b) => a.friends.length - b.friends.length;
-//     const getNamesSortedByFriendCount = users => 
-//       [...users]
-//         .sort(sortUsersByFriendCount)
-//         .map(user => user.name);
-  
-//   console.log(getNamesSortedByFriendCount(users));
-//   // `['Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Sheree Anthony', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson']`
 
-// ----------------------------------
+  // const getSortedFriends = users => { return users.flatMap(friend => friend.friends) .filter((friend, index, array) => array.indexOf(friend) === index).sort((a, b) => a.localeCompare(b))};
 
+const getSortedFriends = users =>
+users
+.flatMap(({ friends }) => friends)
+.filter((friend, index, array) => array.indexOf(friend) === index)
+.sort((a, b) => a.localeCompare(b));
+
+
+console.log(getSortedFriends(users));
+
+// ["Adrian Cross", "Aisha Tran", "Briana Decker", "Eddie Strong", "Goldie Gentry", "Jacklyn Lucas", "Jordan Sampson", "Linda Chapman", "Marilyn Mcintosh", "Naomi Buckner", "Padilla Garrison", "Sharron Pace", "Solomon Fokes"]
