@@ -23,16 +23,25 @@ const books = [
       rating: 8.67,
     },
   ];
-  const MIN_BOOK_RATING = 8;
-  // Change code below this line
+//   const MIN_BOOK_RATING = 8;
+//   // Change code below this line
   
-  const names = [...books]
-  // отфильтруем по рейтингу, чтоб бьіло меньше значений дальше.....
-  .filter(book => book.rating > MIN_BOOK_RATING)
-  //  создадим массив авторов
-  .map(book => book.author)
-  //  отсортируем в алфавитном порядке
-  .sort((a, b) => a.localeCompare(b));
+//   const names = [...books]
+//   // отфильтруем по рейтингу, чтоб бьіло меньше значений дальше.....
+//   .filter(book => book.rating > MIN_BOOK_RATING)
+//   //  создадим массив авторов
+//   .map(book => book.author)
+//   //  отсортируем в алфавитном порядке
+//   .sort((a, b) => a.localeCompare(b));
+
+
+//  ===== или ====
+// ===   сделаем деструктуризацию =====
+  const names = books
+.filter(({ rating }) => rating > MIN_BOOK_RATING)
+.map(({ author }) => author)
+.sort((a, b) => a.localeCompare(b));
+console.log(names);
   
   console.log(names);
   
