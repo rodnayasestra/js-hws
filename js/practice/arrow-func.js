@@ -15,7 +15,7 @@
 
 // arrowFunc();
 
-// const arrowFunc2 = () =>
+// const arrowFunc2 = (a, b) =>
 //   `стрелочная функция без параметров с неявным возвратом`;
 
 // console.log(arrowFunc2());
