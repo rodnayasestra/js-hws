@@ -246,3 +246,75 @@ processCall("Манго", onAvailable, activateAnsweringMachine);
 // // Logging value: 0
 // // Logging value: 1
 // // Logging value: 2
+
+// function doMath(a, b, callback) {
+//   const result = callback(a, b);
+//   console.log(result);
+// }
+
+// function sum(x, y) {
+//   return x + y;
+// }
+// doMath(4, 5, sum);
+
+// function greet(name) {
+//   console.log(`hello ${name}`);
+// }
+
+// function greet2(recipient, callback) {
+//   callback(recipient);
+//   console.log(`registering ${recipient}`);
+// }
+// greet2("James", function (name) {
+//   console.log(`hello ${name}`);
+// });
+
+// const buttonRef = document.querySelector(".js-button");
+// buttonRef.addEventListener("click", function () {
+//   console.log(`клик` + 1);
+// });
+
+// function getPosOnSuccess(position) {
+//   console.log(position);
+// }
+// function getPosOnError(error) {
+//   console.log(error);
+// }
+// window.navigator.geolocation.getCurrentPosition(getPosOnSuccess, getPosOnError);
+
+// REPEATING AUTOANSWER
+
+// function makeCall(recipient, onAvailable, onNotAvailable) {
+//   const math = 3;
+//   if (math === 3) {
+//     return onAvailable(recipient);
+//   }
+//   return onNotAvailable(recipient);
+// }
+// function onLine(name) {
+//   console.log(`соеднияем с ${name}`);
+// }
+// function notOnLine(name) {
+//   console.log(`${name} не может ответить, оставьте сообщение после гудка`);
+// }
+
+// makeCall("Kevin", onLine, notOnLine);
+
+// filter, 2-more callbacks in cicle
+
+// function filter(array, callback) {
+//   const filteredArray = [];
+//   for (const el of array) {
+//     const PASSED = callback(el);
+//     console.log(el, PASSED);
+//     if (PASSED) {
+//       filteredArray.push(el);
+//     }
+//   }
+//   return filteredArray;
+// }
+
+// function gt3(value) {
+//   return value >= 3;
+// }
+// console.log(filter([1, 2, 3, 4, 5, 6, 7, 8], gt3));
