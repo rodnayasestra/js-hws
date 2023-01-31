@@ -15,3 +15,7 @@
 //     Object.keys(person);
 //   }
 // });
+
+const obj = [1, 2, 3, 5, 6];
+console.log(obj);
+console.log(obj.forEach((element) => element ** 2));
