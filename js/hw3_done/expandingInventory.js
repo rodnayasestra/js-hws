@@ -69,6 +69,13 @@ const atTheOldToad = {
       }
     }
   },
+  calculateTotalPrice(potios) {
+    let total = 0;
+    for (const { price } of this.potions) {
+      total += price;
+    }
+    return total;
+  },
 };
 // console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }));
 // console.table(atTheOldToad.potions);
@@ -77,8 +84,15 @@ const atTheOldToad = {
 // console.log(atTheOldToad.updatePotionName("Stone skin", "fucu"));
 // console.table(atTheOldToad.potions);
 
-console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 240 }));
-console.table(atTheOldToad.potions);
+// console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 240 }));
+// console.table(atTheOldToad.potions);
 
-console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }));
-console.table(atTheOldToad.potions);
+// console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }));
+// console.table(atTheOldToad.potions);
+// console.log(atTheOldToad.calculateTotalPrice());
+
+const x = {
+  x: 1,
+  y: 2,
+  z: 3,
+};
