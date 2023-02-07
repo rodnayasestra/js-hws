@@ -83,3 +83,5 @@ const getTotalFriendCount = (users) => {
 };
 // Change code above this line
 console.log(getTotalFriendCount(names));
+// const totalFriendsArr = names.flatMap((user) => user.friends);
+// console.log(totalFriendsArr);

@@ -49,3 +49,5 @@ const books = [
 
 const titles = books.map((book) => book.title);
 console.log(titles);
+
+const ratingX10 = books.map((book) => {});
