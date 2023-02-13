@@ -64,20 +64,53 @@
 // console.dir(myLib);
 
 //
-function salaryManagerFactory(employeeName, baseSalary) {
-  let salary = baseSalary;
-  return {
-    raise(amount) {
-      salary += amount;
-    },
-    lower(amount) {
-      salary -= amount;
-    },
-    current() {
-      return `текущая зарплата ${employeeName} - ${salary}`;
-    },
+// function salaryManagerFactory(employeeName, baseSalary) {
+//   let salary = baseSalary;
+//   return {
+//     raise(amount) {
+//       salary += amount;
+//     },
+//     lower(amount) {
+//       salary -= amount;
+//     },
+//     current() {
+//       return `текущая зарплата ${employeeName} - ${salary}`;
+//     },
+//   };
+// }
+// const salaryManager = salaryManagerFactory("John", 5000);
+// salaryManager.lower(2000);
+// console.log(salaryManager.current());
+
+// Замыкания это по сути функция внутри другой функции
+function createCalcFunction(n) {
+  return function () {
+    console.log(100 * n);
   };
 }
-const salaryManager = salaryManagerFactory("John", 5000);
-salaryManager.lower(2000);
-console.log(salaryManager.current());
+createCalcFunction(42); // не получим ничего, так как эта функция будет возвращать другую функцию
+
+const calc = createCalcFunction(42); // заносим результат выполнения функции в переменную.
+console.log(calc); // ƒ () {
+//   console.log(100 * n);
+// } получаем результат выполнения функции createCalcFunction. Все параметры и переменные, обьявленные в главной функции будут доступны в замыкающей функции.
+
+calc(); // когда мы вызываем функцию, которая была получена в результате другой функции,
+
+function createIncrementor(n) {
+  return function (num) {
+    return n + num;
+  };
+}
+const addOne = createIncrementor(1);
+const addTen = createIncrementor(10);
+console.log(addOne(10));
+console.log(addTen(90));
+
+function urlGenerator(domain) {
+  return function (url) {
+    return `https://${url.toLowerCase().split(" ").join("-")}.${domain}`;
+  };
+}
+const comUrl = urlGenerator("com");
+const uaUrl = urlGenerator("ua");
