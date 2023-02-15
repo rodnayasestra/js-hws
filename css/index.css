@@ -17,6 +17,12 @@ a {
   margin-right: 100px;
   position: relative;
 }
+ul {
+  list-style: none;
+}
+li {
+  margin-bottom: 10px;
+}
 a::after {
   content: "";
   position: absolute;
