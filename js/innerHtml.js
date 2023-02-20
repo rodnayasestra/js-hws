@@ -35,4 +35,6 @@ const htmlString = `<p class="article-text">Nullam quis ante. Vestibulum dapibus
 
 // Replace += with = operator. See the difference?
 // Article title is lost because we overwrite element content.
-article.innerHTML += htmlString;
+article.innerHTML += htmlString; // необходим плюс, потому что при добавлении новой разметки, если указать простое =, то разметка, которая была до этого - очистится, а на ее место придет htmlString.
+
+//свойство elem.innerHTML используем только когда надо добавить элементы в пустой тег или надо полностью заменить его содержимое

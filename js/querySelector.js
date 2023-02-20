@@ -6,11 +6,11 @@
 // Возвращает псевдомассив всех элементов внутри element, удовлетворяющих CSS-селектору selector.
 // Если ничего не найдено, вернет пустой массив.
 
-// const body = document.querySelector(".body"); // получаем доступ
+// const body = document.querySelector(".body"); // получаем доступ к Html. Если ничего не нашло, вернет null
 // body.style.backgroundColor = "grey";
 
 // const list = document.querySelector(".body-list");
 // list.style.display = "flex";
 
-// const li = document.querySelectorAll(".body-list__item");
+// const li = document.querySelectorAll(".body-list__item"); // Возвращает псевдомассив ссылок на элементы с одинаковым селектором. с таким классом. Если ничего не нашло, вернет пустой массив.
 // console.log("🚀 ~ file: dom.js:21 ~ li", li);
