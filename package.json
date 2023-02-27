@@ -1,0 +1,27 @@
+{
+  "name": "js-hws",
+  "version": "1.0.0",
+  "description": "Homeworks JavaScript till 6 module",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdmpdvkn/js-hws.git"
+  },
+  "keywords": [],
+  "author": "VADIM <traplordhoncho@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vdmpdvkn/js-hws/issues"
+  },
+  "homepage": "https://github.com/vdmpdvkn/js-hws#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "joi": "^17.8.3",
+    "validator": "^13.9.0"
+  }
+}
