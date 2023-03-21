@@ -1,0 +1,49 @@
+{
+  "books": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "author": "Me",
+      "name": "I love Paris",
+      "rating": "10",
+      "id": 4
+    },
+    {
+      "author": "Me",
+      "name": "I love Paris. Big Edition",
+      "rating": "10",
+      "id": 5
+    },
+    {
+      "author": "Me",
+      "name": "I love Paris. Small Edition",
+      "rating": "10",
+      "id": 6
+    },
+    {
+      "author": "Me",
+      "name": "I love Paris",
+      "rating": "10",
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "author": "Me",
+      "name": "I love Paris",
+      "rating": "10",
+      "id": 10
+    }
+  ]
+}
