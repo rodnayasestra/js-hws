@@ -1,9 +1,6 @@
 {
   "books": [
     {
-      "id": 1
-    },
-    {
       "id": 2
     },
     {
@@ -24,7 +21,7 @@
     {
       "author": "Me",
       "name": "I love Paris. Small Edition",
-      "rating": "10",
+      "rating": 11,
       "id": 6
     },
     {

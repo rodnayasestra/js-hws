@@ -6,14 +6,16 @@ const BASE_URL = "http://localhost:3000/books";
 //   .then((r) => r.json())
 //   .then(console.log)
 //   .catch(console.log);
-function renameBook(newName, id) {
+function renameBook(updateObj, id) {
   const options = {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ name: `${newName}` }),
+    body: JSON.stringify(updateObj),
   };
   return fetch(`${BASE_URL}/${id}`, options).then((r) => r.json());
 }
-renameBook("I love Paris. Small Edition", 6).then(console.log);
+renameBook({ name: "I love Paris. Small Edition", rating: 11 }, 6).then(
+  console.log
+);
